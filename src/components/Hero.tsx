@@ -2,7 +2,9 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Shield, Zap, Lock } from "lucide-react";
 import appScreenshot from "@/assets/app-screenshot.png";
+import app from "@/assets/app.jpg";
 import heroBg from "@/assets/hero-bg.jpg";
+import banner from "@/assets/banner.jpg";
 
 const Hero = () => {
   return (
@@ -125,11 +127,15 @@ const Hero = () => {
                 <div className="phone-notch" />
                 <div className="phone-screen aspect-[9/19]">
                   <img
-                    src={appScreenshot}
+                    src={app}
                     alt="WotPan App Screenshot"
                     className="w-full h-full object-cover"
                   />
                 </div>
+                
+
+
+                
               </motion.div>
 
               {/* Decorative elements */}
@@ -145,6 +151,8 @@ const Hero = () => {
               />
             </div>
           </motion.div>
+
+          
         </div>
       </div>
     </section>
