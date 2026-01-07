@@ -57,7 +57,7 @@ const Header = () => {
               alt="WotPan Logo" 
               className="w-10 h-10 rounded-xl shadow-glow-sm group-hover:shadow-glow transition-shadow duration-300 object-cover"
             />
-            <span className="text-2xl font-bold  text-[#00ABEF]">WotPan</span>
+            <span className="text-2xl font-bold text-[#00ABEF]">WotPan</span>
           </Link>
 
           {/* Desktop Navigation */}
