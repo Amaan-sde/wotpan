@@ -1,3 +1,6 @@
+Sitemap: https://wotpan.com/sitemap.xml
+User-agent: *
+Disallow:
 User-agent: Googlebot
 Allow: /
 
