@@ -1,4 +1,4 @@
-import { Link, useHref } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Youtube, Instagram, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -16,15 +16,11 @@ const Footer = () => {
     ],
     company: [
       { name: "About Us", href: "https://mail.google.com/mail/?view=cm&fs=1&to=support@wotpan.com" },
+      { name: "Disclaimer", href: "/disclaimer" } // ✅ Added as Link
     ],
     support: [
       { name: "Help Center", href: "/#footer" },
-    {
-  name: "Contact Us",
-  href: "https://mail.google.com/mail/?view=cm&fs=1&to=support@wotpan.com"
-},
-
-
+      { name: "Contact Us", href: "https://mail.google.com/mail/?view=cm&fs=1&to=support@wotpan.com" },
       { name: "System Status", href: "/#footer" },
       { name: "Community", href: "/#footer" },
     ],
@@ -84,12 +80,12 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href} // ✅ Use React Router Link for internal navigation
                     className="text-background/60 hover:text-primary transition-colors text-sm"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -135,7 +131,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             {/* Copyright */}
             <p className="text-background/50 text-sm">
-              © 2026 WotPan. All rights reserved.
+              © {currentYear} WotPan. All rights reserved.
             </p>
 
             {/* Social Links */}

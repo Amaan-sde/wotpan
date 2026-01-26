@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import wotpanLogo from "@/assets/wotpan-logo.jpg";
+import blueTick from '@/assets/blue.jpeg'
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -58,6 +59,13 @@ const Header = () => {
               className="w-10 h-10 rounded-xl shadow-glow-sm group-hover:shadow-glow transition-shadow duration-300 object-cover"
             />
             <span className="text-2xl font-bold text-[#00ABEF]">WotPan</span>
+              
+  {/* Blue Tick */}
+  <img
+    src={blueTick}
+    alt="Verified"
+    className="w-5 h-5 -ml-[8px] mb-[1px] translate-y-[1px] rounded-full"
+  />
           </Link>
 
           {/* Desktop Navigation */}

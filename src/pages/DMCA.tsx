@@ -11,14 +11,15 @@ const DMCA = () => {
       <header className="bg-background border-b border-border sticky top-0 z-50">
         <div className="container py-4">
           <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center gap-2 group">
-              <img 
-                src={wotpanLogo} 
-                alt="WotPan Logo" 
+            <Link to="/" className="flex items-center gap-2">
+              <img
+                src={wotpanLogo}
+                alt="WotPan Logo"
                 className="w-10 h-10 rounded-xl object-cover"
               />
               <span className="text-xl font-bold text-foreground">WotPan</span>
             </Link>
+
             <Link
               to="/"
               className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
@@ -41,77 +42,116 @@ const DMCA = () => {
           >
             <header className="border-b border-border pb-6 mb-8">
               <h1 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-                DMCA Copyright Infringement Policy
+                WotPan DMCA & Copyright Infringement Policy
               </h1>
               <p className="text-muted-foreground">
-                <strong>Last Updated:</strong> October 5, 2025
+                <strong>Last Updated:</strong> January 23, 2026
                 <br />
-                <strong>Effective Date:</strong> October 5, 2025
+                <strong>Effective Date:</strong> January 23, 2026
               </p>
             </header>
 
             <div className="legal-content prose prose-slate max-w-none">
               <p>
-                WotPan respects the intellectual property rights of others and asks its
-                users to do the same. This policy describes our process for receiving
-                and responding to claims of copyright infringement, consistent with the
-                Digital Millennium Copyright Act (DMCA) and other applicable laws.
+                WotPan respects the intellectual property rights of others. This
+                policy explains our process for responding to claims of copyright
+                infringement in accordance with the Digital Millennium Copyright
+                Act (DMCA) and the Indian Copyright Act, 1957.
               </p>
 
-              <h2>1. Designated Agent for DMCA Notices</h2>
+              <h2>1. Designated Agent for Copyright Notices</h2>
               <p>
-                All notifications of claimed copyright infringement on the Service must
-                be submitted in writing to our Designated Agent:
+                If you believe that your work has been copied in a way that
+                constitutes copyright infringement, please send your notice to
+                our Designated Agent:
               </p>
 
               <div className="legal-notice">
-                <p className="mb-2"><strong>Designated Copyright Agent:</strong></p>
-                <p className="mb-2"><strong>Email:</strong> <a href="mailto:Support@wotpan.com">Support@wotpan.com</a></p>
-                <p className="mb-0"><strong>Address:</strong> House 95, Longi Kala, Thakurdwara, Moradabad, Uttar Pradesh 244601, India</p>
+                <p>
+                  <strong>Copyright Agent:</strong> WotPan Legal Team
+                </p>
+                <p>
+                  <strong>Email:</strong>{" "}
+                  <a href="mailto:Support@wotpan.com">
+                    Support@wotpan.com
+                  </a>
+                </p>
+                <p>
+                  <strong>Address:</strong> House 95, Longi Kala,
+                  Thakurdwara, Moradabad, Uttar Pradesh 244601, India
+                </p>
               </div>
 
-              <h2>2. Takedown Notice Requirements</h2>
+              <h2>2. How to File a Takedown Notice</h2>
               <p>
-                To be effective, your written notification of claimed infringement must
-                include substantially all of the following:
+                To be valid, your notice must be in writing and include the
+                following:
               </p>
-              <ol>
-                <li>A physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.</li>
-                <li>Identification of the copyrighted work claimed to have been infringed, or, if multiple copyrighted works are covered by a single notification, a representative list of such works.</li>
-                <li>Identification of the material that is claimed to be infringing or to be the subject of infringing activity and that is to be removed or access to which is to be disabled, and information reasonably sufficient to permit WotPan to locate the material.</li>
-                <li>Information reasonably sufficient to permit WotPan to contact the complaining party, such as an address, telephone number, and email address.</li>
-                <li>A statement that the complaining party has a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law.</li>
-                <li>A statement that the information in the notification is accurate, and under penalty of perjury, that the complaining party is authorized to act on behalf of the owner.</li>
-              </ol>
-              <p>
-                Upon receipt of a valid Takedown Notice, WotPan will take appropriate
-                action, which may include removing or disabling access to the allegedly
-                infringing material.
-              </p>
+
+              <ul>
+                <li>
+                  <strong>Signature:</strong> A physical or electronic
+                  signature of the copyright owner or authorized person.
+                </li>
+                <li>
+                  <strong>Identification of Work:</strong> Clear description
+                  of the copyrighted work you claim is being infringed.
+                </li>
+                <li>
+                  <strong>Location of Material:</strong> The exact URL or
+                  location within the WotPan app where the infringing material
+                  is located.
+                </li>
+                <li>
+                  <strong>Contact Info:</strong> Your address, phone number,
+                  and email address.
+                </li>
+                <li>
+                  <strong>Good Faith Statement:</strong> A statement that you
+                  have a good faith belief that the use is not authorized.
+                </li>
+                <li>
+                  <strong>Accuracy Statement:</strong> A statement that the
+                  information is accurate and, under penalty of perjury, that
+                  you are authorized to act for the owner.
+                </li>
+              </ul>
 
               <h2>3. Counter-Notice Procedures</h2>
               <p>
-                If your content was removed or access was disabled as a result of a
-                copyright infringement notice, and you believe the content was removed
-                by mistake or misidentification, you may submit a Counter-Notice to our
-                Designated Agent.
+                If your content was removed by mistake or misidentification,
+                you may submit a counter-notice. It must include:
               </p>
-              <p>
-                To be effective, your Counter-Notice must include substantially all of
-                the following:
-              </p>
-              <ol>
-                <li>Your physical or electronic signature.</li>
-                <li>Identification of the material that has been removed or to which access has been disabled and the location at which the material appeared before it was removed.</li>
-                <li>A statement under penalty of perjury that you have a good faith belief that the material was removed or disabled as a result of mistake or misidentification.</li>
-                <li>Your name, address, and telephone number, and a statement that you consent to the jurisdiction of the Federal District Court for the judicial district in which your address is located.</li>
-              </ol>
 
-              <h2>4. Repeat Infringers</h2>
+              <ul>
+                <li>
+                  Identification of the removed material and its original
+                  location.
+                </li>
+                <li>
+                  A statement under penalty of perjury that you believe the
+                  removal was a mistake.
+                </li>
+                <li>Your name, address, and telephone number.</li>
+                <li>
+                  Consent to the jurisdiction of the courts in Moradabad,
+                  Uttar Pradesh (Indian users) or the appropriate federal
+                  court (international users).
+                </li>
+              </ul>
+
+              <h2>4. Repeat Infringer Policy</h2>
               <p>
-                It is the policy of WotPan to terminate, in appropriate circumstances,
-                the account of any user who is a repeat infringer of copyright or other
-                intellectual property rights.
+                Accounts that repeatedly upload infringing content (more than
+                3 valid strikes) will be permanently terminated without notice.
+              </p>
+
+              <h2>5. Limitation of Liability</h2>
+              <p>
+                As an intermediary under the Information Technology Act,
+                WotPan is not liable for user-generated content provided that
+                infringing material is removed promptly upon receiving a
+                valid notice.
               </p>
             </div>
           </motion.div>

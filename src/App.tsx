@@ -8,6 +8,7 @@ import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import Cookie from "./pages/Cookie";
 import DMCA from "./pages/DMCA";
+import Disclaimer from "./pages/Disclaimer"; // ✅ Import Disclaimer
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,7 +25,8 @@ const App = () => (
           <Route path="/terms" element={<Terms />} />
           <Route path="/cookie" element={<Cookie />} />
           <Route path="/dmca" element={<DMCA />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/disclaimer" element={<Disclaimer />} /> {/* ✅ Add this */}
+          {/* Catch-all 404 */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
