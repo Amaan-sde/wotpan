@@ -130,27 +130,31 @@ const Footer = () => {
         <div className="border-t border-background/10 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             {/* Copyright */}
-            <p className="text-background/50 text-sm">
-              WotPan is a social networking platform. All logos and trademarks are the property of their respective owners. Use of this service is subject to our Terms of Service and Privacy Policy. © 2026 WotPan. All rights reserved.
-            </p>
+ <p className="text-background/50 text-sm whitespace-pre-line">
+{`WotPan is a social networking platform. All logos and 
+trademarksare the property of their respective owners.
+Use of this service is subject to our Terms of Service 
+and Privacy Policy.© 2026 WotPan. All rights reserved.`}
+</p>
 
             {/* Social Links */}
             <div className="flex items-center gap-12">
-              {socialLinks.map((social) => (
-                <motion.a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={social.label}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
-                >
-                  <social.icon className="w-5 h-5" />
-                </motion.a>
-              ))}
-            </div>
+  {socialLinks.map((social) => (
+    <motion.a
+      key={social.label}
+      href={social.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={social.label}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+      className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors mr-[45px]"
+    >
+      <social.icon className="w-5 h-5" />
+    </motion.a>
+  ))}
+</div>
+
 
             {/* Download CTA */}
             <Button
