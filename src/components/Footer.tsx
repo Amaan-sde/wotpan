@@ -138,7 +138,7 @@ and Privacy Policy.© 2026 WotPan. All rights reserved.`}
 </p>
 
             {/* Social Links */}
-            <div className="flex items-center gap-12">
+       <div className="flex items-center justify-center gap-6 sm:gap-8 md:gap-12">
   {socialLinks.map((social) => (
     <motion.a
       key={social.label}
@@ -148,9 +148,10 @@ and Privacy Policy.© 2026 WotPan. All rights reserved.`}
       aria-label={social.label}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
-      className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors mr-[45px]"
+      className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-background/10 
+                 flex items-center justify-center hover:bg-primary transition-colors "
     >
-      <social.icon className="w-5 h-5" />
+      <social.icon className="w-4 h-4 sm:w-5 sm:h-5" />
     </motion.a>
   ))}
 </div>
