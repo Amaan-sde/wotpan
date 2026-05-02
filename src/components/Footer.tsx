@@ -52,9 +52,7 @@ const Footer = () => {
               />
               <span className="text-xl font-bold">WotPan</span>
             </Link>
-            <p className="text-background/60 text-sm leading-relaxed">
-              Simple, secure, and reliable messaging for everyone.
-            </p>
+            {/* Brand description removed to match image layout */}
           </div>
 
           {/* Product */}
@@ -127,35 +125,35 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-background/10 pt-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            {/* Copyright */}
- <p className="text-background/50 text-sm whitespace-pre-line">
-{`WotPan is a social networking platform. All logos and 
-trademarksare the property of their respective owners.
-Use of this service is subject to our Terms of Service 
-and Privacy Policy.© 2026 WotPan. All rights reserved.`}
-</p>
+        <div className="border-t border-background/20 pt-8">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:pr-12 lg:pr-20">
+            <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+              {/* Copyright & Disclaimer */}
+              <div className="max-w-lg text-left">
+                <p className="text-background/40 text-[13px] leading-snug font-normal whitespace-pre-line">
+                  {`WotPan is a global social networking platform. WotPan® and its logos are registered trademarks. All other trademarks are the property of their respective owners. Use of this service is subject to our Terms of Service and Privacy Policy.
+© 2026 WotPan. Owned by Mohd Arif. All rights reserved.`}
+                </p>
+              </div>
 
-            {/* Social Links */}
-       <div className="flex items-center justify-center gap-6 sm:gap-8 md:gap-12">
-  {socialLinks.map((social) => (
-    <motion.a
-      key={social.label}
-      href={social.href}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label={social.label}
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.95 }}
-      className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-background/10 
-                 flex items-center justify-center hover:bg-primary transition-colors "
-    >
-      <social.icon className="w-4 h-4 sm:w-5 sm:h-5" />
-    </motion.a>
-  ))}
-</div>
-
+              {/* Social Links */}
+              <div className="flex items-center gap-6">
+                {socialLinks.map((social) => (
+                  <motion.a
+                    key={social.label}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={social.label}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary transition-colors"
+                  >
+                    <social.icon className="w-5 h-5" />
+                  </motion.a>
+                ))}
+              </div>
+            </div>
 
             {/* Download CTA */}
             <Button
