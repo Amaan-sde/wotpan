@@ -4,11 +4,13 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import About from "./pages/About";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import Cookie from "./pages/Cookie";
 import DMCA from "./pages/DMCA";
 import Disclaimer from "./pages/Disclaimer"; // ✅ Import Disclaimer
+import GlobalPolicy from "./pages/GlobalPolicy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,11 +23,13 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/about" element={<About />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/cookie" element={<Cookie />} />
           <Route path="/dmca" element={<DMCA />} />
           <Route path="/disclaimer" element={<Disclaimer />} /> {/* ✅ Add this */}
+          <Route path="/global-policy" element={<GlobalPolicy />} />
           {/* Catch-all 404 */}
           <Route path="*" element={<NotFound />} />
         </Routes>

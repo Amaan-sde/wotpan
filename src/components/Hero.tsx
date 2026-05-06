@@ -71,6 +71,15 @@ const Hero = () => {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.35 }}
+              className="text-base sm:text-lg text-foreground/80 font-normal leading-relaxed mb-4 max-w-xl mx-auto lg:mx-0"
+            >
+              Your privacy is our priority. At WotPan, we ensure 100% data security with zero ads. We never sell your personal information to third-party companies—just pure, private messaging.
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-8"
             >

@@ -15,7 +15,7 @@ const Footer = () => {
       { name: "Business", href: "/#download" },
     ],
     company: [
-      { name: "About Us", href: "https://mail.google.com/mail/?view=cm&fs=1&to=support@wotpan.com" },
+      { name: "About Us", href: "/about" },
       { name: "Disclaimer", href: "/disclaimer" } // ✅ Added as Link
     ],
     support: [
@@ -29,6 +29,7 @@ const Footer = () => {
       { name: "Terms & Conditions", href: "/terms" },
       { name: "Cookie Policy", href: "/cookie" },
       { name: "DMCA", href: "/dmca" },
+      { name: "Global Policy", href: "/global-policy" },
     ],
   };
 
