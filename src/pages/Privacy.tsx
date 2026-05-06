@@ -82,7 +82,7 @@ const Privacy = () => {
                     </a>
                   </li>
                   <li>
-                    <strong>Phone:</strong> +91-7017127130
+                    <strong>Phone:</strong> +91-0000000000
                   </li>
                 </ul>
               </div>
@@ -220,7 +220,7 @@ const Privacy = () => {
                 <a href="mailto:Support@wotpan.com">
                   Support@wotpan.com
                 </a>{" "}
-                / +91-7017127.
+                / +91-0000000000.
               </p>
             </div>
           </motion.div>

@@ -43,29 +43,28 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
           ? "bg-background/80 backdrop-blur-xl shadow-soft border-b border-border/50"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="container">
         <nav className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <img 
-              src={wotpanLogo} 
-              alt="WotPan Logo" 
+            <img
+              src={wotpanLogo}
+              alt="WotPan Logo"
               className="w-10 h-10 rounded-xl shadow-glow-sm group-hover:shadow-glow transition-shadow duration-300 object-cover"
             />
             <span className="text-2xl font-bold text-[#00ABEF]">WotPan</span>
-              
-  {/* Blue Tick */}
-  <img
-    src={blueTick}
-    alt="Verified"
-    className="w-5 h-5 -ml-[8px] mb-[1px] translate-y-[1px] rounded-full"
-  />
+
+            {/* Blue Tick */}
+            <img
+              src={blueTick}
+              alt="Verified"
+              className="w-5 h-5 -ml-[8px] mb-[1px] translate-y-[1px] rounded-full"
+            />
           </Link>
 
           {/* Desktop Navigation */}

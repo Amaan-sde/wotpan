@@ -11,12 +11,12 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 -z-10">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{ backgroundImage: `url(${heroBg})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
-        
+
         {/* Floating orbs */}
         <motion.div
           className="absolute top-1/4 right-1/4 w-96 h-96 rounded-full opacity-20"
@@ -141,10 +141,10 @@ const Hero = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                
 
 
-                
+
+
               </motion.div>
 
               {/* Decorative elements */}
@@ -161,7 +161,7 @@ const Hero = () => {
             </div>
           </motion.div>
 
-          
+
         </div>
       </div>
     </section>
