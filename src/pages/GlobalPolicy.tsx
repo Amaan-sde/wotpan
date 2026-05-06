@@ -77,7 +77,7 @@ const GlobalPolicy = () => {
                   <div className="space-y-4 text-muted-foreground leading-relaxed pl-13">
                     <div className="bg-muted/50 p-6 rounded-2xl border border-border">
                       <h3 className="font-semibold text-foreground mb-2">Entity Information</h3>
-                      <p>WotPan is a registered entity under the laws of India. All services provided are governed by our official registration and GST compliance.</p>
+                      <p>WotPan is a registered entity under the laws of India. All services provided are governed by our official registration and GST compliance. <br /><strong>Phone:</strong> +91-9876543210</p>
                     </div>
                     <p><strong>Commitment:</strong> WotPan is committed to privacy worldwide, complying with India’s DPDP Act, Europe’s GDPR, and USA’s CCPA.</p>
                     <p><strong>Data Collection:</strong> We collect your name, phone number, and device info to provide secure messaging.</p>

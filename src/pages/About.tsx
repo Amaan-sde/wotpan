@@ -160,7 +160,8 @@ const About = () => {
                     <h3 className="text-2xl font-bold mb-4">Registered Address</h3>
                     <p className="text-xl text-background/60">
                       Moradabad, Uttar Pradesh,<br />
-                      India - 244001.
+                      India - 244001.<br />
+                      Phone: +91-9876543210
                     </p>
                   </div>
                 </div>

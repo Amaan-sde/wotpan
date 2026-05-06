@@ -189,7 +189,7 @@ const Terms = () => {
                     Support@wotpan.com
                   </a>
                 </li>
-                <li><strong>Phone:</strong> +91-0000000000</li>
+                <li><strong>Phone:</strong> +91-9876543210</li>
               </ul>
             </div>
           </motion.div>
